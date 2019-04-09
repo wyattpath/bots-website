@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Juzo</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="0">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#"
+        ><img src="./img/logo.png" alt="Logo" style="width:40px;" /> Juzo</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about"
+              ><i class="fas fa-address-card"></i> About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#commands"
+              ><i class="fas fa-exclamation-circle"></i> Commands</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://discord.gg/gVbN5TB"
+              target="_blank"
+              ><i class="fas fa-question-circle"></i> Support</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://discordapp.com/api/oauth2/authorize?client_id=538816846712012800&permissions=321600&scope=bot"
+              target="_blank"
+              ><i class="fab fa-discord"></i> Add To Server
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="#" class="container-fluid text-center text-light bg-dark">
+      <h1 class="display-1">Juzo</h1>
+      <p class="lead">
+        Juzo is a Discord Bot for counting, anonymous confessions, suggestions,
+        reacting with custom emojis and more.
+      </p>
+      <a href="https://discordbots.org/bot/538816846712012800">
+        <img
+          src="https://discordbots.org/api/widget/538816846712012800.svg"
+          alt="Juzo"
+        />
+      </a>
+      <br />
+      <br />
+    </div>
+
+    <div id="about" class="container text-center text-dark bg-white">
+      <h1>About</h1>
+      <p>
+        Juzo is a general purpose Discord bot. I started making this bot for fun
+        and because I can. There are already a lot of moderation and music bots.
+        That's why I wanted this bot to focus on fun features to make my server
+        more colorful and entertaining. After implementing and adding more
+        features I realized that some of the moderation features of other
+        popular bots had some loopholes. Therefore I started implementing my own
+        moderation tools.
+      </p>
+    </div>
+
+    <div id="commands" class="container text-center text-light bg-dark">
+      <h1>Commands</h1>
+      <p>
+        This is my first bot. I'll put every command in that I like until it
+        explodes. It's still in development. Many changes. Many updates. Chaos.
+      </p>
+      <table class="table table-dark ">
+        <thead>
+          <tr>
+            <th scope="col">Command</th>
+            <th scope="col">Description</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>botinfo</td>
+            <td>Shows bot info</td>
+            <td><code>j!botinfo</code></td>
+          </tr>
+          <tr>
+            <td>cat</td>
+            <td>Shows a random pic of a cat</td>
+            <td><code>j!cat</code></td>
+          </tr>
+          <tr>
+            <td>dog</td>
+            <td>Shows a random pic of a dog</td>
+            <td><code>j!dog</code></td>
+          </tr>
+          <tr>
+            <td>emojis</td>
+            <td>Shows a list of all custom server emojis</td>
+            <td><code>j!emojis</code></td>
+          </tr>
+          <tr>
+            <td>help</td>
+            <td>Shows all commands</td>
+            <td><code>j!help</code></td>
+          </tr>
+          <tr>
+            <td>ping</td>
+            <td>Checks if Bot is online</td>
+            <td><code>j!ping</code></td>
+          </tr>
+          <tr>
+            <td>react [emoji]</td>
+            <td>Sends a reaction</td>
+            <td><code>j!react gifcolorheart</code></td>
+          </tr>
+          <tr>
+            <td>reacttolast [emoji]</td>
+            <td>Reacts to the last message with the given emoji</td>
+            <td><code>j!reacttolast gifcolorheart</code></td>
+          </tr>
+          <tr>
+            <td>reacttothis [emoji]</td>
+            <td>Reacts to the message with the given emoji</td>
+            <td><code>j!reacttothis gifcolorheart</code></td>
+          </tr>
+          <tr>
+            <td>say [message]</td>
+            <td>Lets the bot say something</td>
+            <td><code>j!say hello</code></td>
+          </tr>
+          <tr>
+            <td>serverinfo</td>
+            <td>Shows server info</td>
+            <td><code>j!serverinfo</code></td>
+          </tr>
+          <tr>
+            <td>userinfo [@user]</td>
+            <td>Shows user info</td>
+            <td><code>j!userinfo</code><br /><code>j!userinfo Peter</code></td>
+          </tr>
+          <tr>
+            <td>ytsearch [youtube-title]</td>
+            <td>Searches for videos on YouTube</td>
+            <td><code>j!ytsearch blackpink</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
