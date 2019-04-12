@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth">
   <head>
     <title>Juzo</title>
     <meta charset="utf-8" />
@@ -26,8 +26,10 @@
     class="bg-dark"
   >
     <header>
-      <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-dark">
-        <a class="navbar-brand" href="#"> <strong>Wyatt Bots</strong></a>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-user-circle"></i> <strong>Wyatt Path</strong></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -39,30 +41,22 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+              <a class="nav-link" href="#juzofeaturette"
+                ><i class="fas fa-exclamation-circle"></i> Features</a
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#about"
                 ><i class="fas fa-address-card"></i> About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#commands"
-                ><i class="fas fa-exclamation-circle"></i> Commands</a
-              >
-            </li>
-            <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link btn btn-primary text-white"
                 href="https://discord.gg/gVbN5TB"
                 target="_blank"
                 ><i class="fas fa-question-circle"></i> Support</a
               >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://discordapp.com/api/oauth2/authorize?client_id=538816846712012800&permissions=321600&scope=bot"
-                target="_blank"
-                ><i class="fab fa-discord"></i> Add To Server
-              </a>
             </li>
           </ul>
         </div>
@@ -86,20 +80,22 @@
               <div class="carousel-item active">
                 <img
                   class="d-block w-100"
-                  src="http://sfwallpaper.com/images/free-background-images-4.jpg"
+                  src="https://images4.alphacoders.com/909/thumb-1920-909912.png"
                   alt="First slide"
                 />
                 <div class="container">
                   <div class="carousel-caption text-left">
-                    <h1>Example headline.</h1>
+                    <h1>Pep up your server!</h1>
                     <p class="d-none d-md-block">
-                      Cras justo odio, dapibus ac facilisis in, egestas eget
-                      quam. Donec id elit non mi porta gravida at eget metus.
-                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      Maximize the productivity and entertainment on your server
+                      with a Discord Bot now!
                     </p>
                     <p>
-                      <a class="btn btn-lg btn-primary" href="#" role="button"
-                        >Sign up today</a
+                      <a
+                        class="btn btn-lg btn-primary"
+                        href="#featurette"
+                        role="button"
+                        >Get started</a
                       >
                     </p>
                   </div>
@@ -108,19 +104,22 @@
               <div class="carousel-item">
                 <img
                   class="d-block w-100"
-                  src="http://sfwallpaper.com/images/free-background-images-4.jpg"
+                  src="https://cdn-images-1.medium.com/max/2600/1*pBZ1aL7UcriEesvddpPOFg.png"
                   alt="Second slide"
                 />
                 <div class="container">
                   <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
+                    <h1>Find the perfect Discord bot!</h1>
                     <p class="d-none d-md-block">
-                      Cras justo odio, dapibus ac facilisis in, egestas eget
-                      quam. Donec id elit non mi porta gravida at eget metus.
-                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      Juzo for entertainment, Puyo for moderation, Kuro for
+                      statistics! Add one or all of them according to your
+                      needs! Read more about their features!
                     </p>
                     <p>
-                      <a class="btn btn-lg btn-primary" href="#" role="button"
+                      <a
+                        class="btn btn-lg btn-primary"
+                        href="#juzofeaturette"
+                        role="button"
                         >Learn more</a
                       >
                     </p>
@@ -130,20 +129,23 @@
               <div class="carousel-item">
                 <img
                   class="d-block w-100"
-                  src="http://sfwallpaper.com/images/free-background-images-4.jpg"
+                  src="./img/bg_blurred.JPG"
                   alt="Third slide"
                 />
                 <div class="container">
                   <div class="carousel-caption text-right">
-                    <h1>One more for good measure.</h1>
+                    <h1>Community</h1>
                     <p class="d-none d-md-block">
-                      Cras justo odio, dapibus ac facilisis in, egestas eget
-                      quam. Donec id elit non mi porta gravida at eget metus.
-                      Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      You are not sure if you really want the bots yet? See the
+                      bot in action!
                     </p>
                     <p>
-                      <a class="btn btn-lg btn-primary" href="#" role="button"
-                        >Browse gallery</a
+                      <a
+                        class="btn btn-lg btn-primary"
+                        href="https://discord.gg/aE2vkjv"
+                        target="_blank"
+                        role="button"
+                        >Join Attention Seekers</a
                       >
                     </p>
                   </div>
@@ -180,7 +182,10 @@
       <br />
 
       <!--Marketing section-->
-      <div class="container-fluid marketing text-center bg-light">
+      <div
+        id="featurette"
+        class="container-fluid marketing text-center bg-light"
+      >
         <!-- Three columns of text below the carousel -->
         <br />
         <div class="row">
@@ -193,15 +198,13 @@
             />
             <h2>Juzo</h2>
             <p>
-              Juzo is a Discord Bot for Fun stuff.
+              Juzo is a multi-functional Discord bot used mainly for sending
+              messages anonymously, suggestions, counting and automatic
+              reactions.
             </p>
             <p>
-              <a
-                class="btn btn-secondary"
-                href="https://discordapp.com/api/oauth2/authorize?client_id=538816846712012800&permissions=321600&scope=bot"
-                target="_blank"
-                role="button"
-                >Add to server »</a
+              <a class="btn btn-secondary" href="#juzofeaturette" role="button"
+                >View details »</a
               >
             </p>
           </div>
@@ -215,15 +218,11 @@
             />
             <h2>Puyo</h2>
             <p>
-              Puyo is a Moderation and Logging Bot.
+              Puyo is a general-purpose bot used for moderation and logging.
             </p>
             <p>
-              <a
-                class="btn btn-secondary"
-                href="https://discordapp.com/api/oauth2/authorize?client_id=544269915960639508&permissions=268724230&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3D544269915960639508%26permissions%3D268722182%26redirect_uri%3Dhttps%253A%252F%252Fdiscordapp.com%252Fapi%252Foauth2%252Fauthorize%253Fclie&scope=bot"
-                target="_blank"
-                role="button"
-                >Add to server »</a
+              <a class="btn btn-secondary" href="#puyofeaturette" role="button"
+                >View details »</a
               >
             </p>
           </div>
@@ -237,15 +236,12 @@
             />
             <h2>Kuro</h2>
             <p>
-              Kuro is a Discord Stat Bot.
+              Kuro is a Discord Utility Bot that monitors server statistics
+              monitor.
             </p>
             <p>
-              <a
-                class="btn btn-secondary"
-                href="#"
-                target="_blank"
-                role="button"
-                >Add to server »</a
+              <a class="btn btn-secondary" href="#kurofeaturette" role="button"
+                >View details »</a
               >
             </p>
           </div>
@@ -260,14 +256,36 @@
         <div id="juzofeaturette" class="row featurette bg-dark">
           <div class="col-md-7">
             <br />
-            <h2 class="featurette-heading text-light">
+            <h2 class="featurette-heading" style="color: rgb(157, 201, 241)">
               Juzo
-              <span style="color: rgb(157, 201, 241)">Reactions!</span>
+              <span class="text-secondary">Features</span>
             </h2>
-            <p class="lead text-white">
-              Juzo is a Discord Bot for counting, anonymous confessions,
-              suggestions, reacting with custom emojis and more.
-            </p>
+            <div class="container lead text-white">
+              <ul>
+                <li>Send anonymous messages</li>
+                <li>Add suggestions in a voting channel</li>
+                <li>Add reactions automatically to messages</li>
+              </ul>
+              <br />
+              <a
+                class="btn btn-primary"
+                href="https://discordapp.com/api/oauth2/authorize?client_id=538816846712012800&permissions=321600&scope=bot"
+                role="button"
+                target="_blank"
+              >
+                <i class="fab fa-discord"></i> Add to server
+              </a>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#juzoCommands"
+                aria-expanded="false"
+                aria-controls="juzoCommands"
+              >
+                <i class="fas fa-exclamation-circle"></i> Commands »
+              </button>
+            </div>
           </div>
           <div class="col-md-5">
             <br />
@@ -278,7 +296,7 @@
               src="./img/juzo.png"
             />
           </div>
-          <div class="container">
+          <div id="juzoCommands" class="container collapse text-light">
             <br />
             <table class="table table-dark ">
               <thead>
@@ -298,6 +316,16 @@
                   <td>cat</td>
                   <td>Shows a random pic of a cat</td>
                   <td><code>j!cat</code></td>
+                </tr>
+                <tr>
+                  <td>confesschannel</td>
+                  <td>
+                    Setups a channel for anonymous messages. Then get your
+                    server id and send the bot a direct message with the prefix
+                    <code>confess [server id] ex: </code> confess 25309857029789
+                    test<code> </code>
+                  </td>
+                  <td><code>j!confesschannel #channel</code></td>
                 </tr>
                 <tr>
                   <td>dog</td>
@@ -361,180 +389,179 @@
           </div>
         </div>
 
-        <div id="puyofeaturette" class="row featurette bg-dark">
+        <div id="puyofeaturette" class="row featurette bg-light">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading text-white">
+            <br />
+            <h2 class="featurette-heading" style="color: darksalmon">
               Puyo
-              <span style="color: darksalmon">A bit of Moderatoration</span>
+              <span class="text-secondary">Features</span>
             </h2>
-            <p class="lead text-white">
-              (yeah I wrote it correctily!) <br />
-              Tempmute, kick or ban members who break your rules!
-            </p>
+            <div class="container lead">
+              <ul>
+                <li>Warn, kick or ban Members</li>
+                <li>Tempmute Members</li>
+                <li>Display moderator stats</li>
+              </ul>
+              <br />
+              <a
+                class="btn btn-primary"
+                href="https://discordapp.com/api/oauth2/authorize?client_id=544269915960639508&permissions=268724230&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Fapi%2Foauth2%2Fauthorize%3Fclient_id%3D544269915960639508%26permissions%3D268722182%26redirect_uri%3Dhttps%253A%252F%252Fdiscordapp.com%252Fapi%252Foauth2%252Fauthorize%253Fclie&scope=bot"
+                target="_blank"
+                role="button"
+              >
+                <i class="fab fa-discord"></i> Add to server
+              </a>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#puyoCommands"
+                aria-expanded="false"
+                aria-controls="puyoCommands"
+              >
+                <i class="fas fa-exclamation-circle"></i> Commands »
+              </button>
+            </div>
           </div>
           <div class="col-md-5 order-md-1">
+            <br />
             <img
               class="rounded-circle"
               width="280"
               height="280"
               src="./img/puyo.png"
             />
+            <br />
           </div>
+        </div>
+        <div id="puyoCommands" class="container collapse text-light">
+          <br />
+          <table class="table table-light ">
+            <thead>
+              <tr>
+                <th scope="col">Command</th>
+                <th scope="col">Description</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>botinfo</td>
+                <td>Shows bot info</td>
+                <td><code>j!botinfo</code></td>
+              </tr>
+              <tr>
+                <td>help</td>
+                <td>Shows all commands</td>
+                <td><code>j!help</code></td>
+              </tr>
+              <tr>
+                <td>ping</td>
+                <td>Checks if Bot is online</td>
+                <td><code>j!ping</code></td>
+              </tr>
+              <tr>
+                <td>react [emoji]</td>
+                <td>Sends a reaction</td>
+                <td><code>j!react gifcolorheart</code></td>
+              </tr>
+              <tr>
+                <td>reacttolast [emoji]</td>
+                <td>Reacts to the last message with the given emoji</td>
+                <td><code>j!reacttolast gifcolorheart</code></td>
+              </tr>
+              <tr>
+                <td>reacttothis [emoji]</td>
+                <td>Reacts to the message with the given emoji</td>
+                <td><code>j!reacttothis gifcolorheart</code></td>
+              </tr>
+              <tr>
+                <td>say [message]</td>
+                <td>Lets the bot say something</td>
+                <td><code>j!say hello</code></td>
+              </tr>
+              <tr>
+                <td>serverinfo</td>
+                <td>Shows server info</td>
+                <td><code>j!serverinfo</code></td>
+              </tr>
+              <tr>
+                <td>userinfo [@user]</td>
+                <td>Shows user info</td>
+                <td>
+                  <code>j!userinfo</code><br /><code>j!userinfo Peter</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div id="kurofeaturette" class="row featurette bg-dark ">
           <div class="col-md-7">
             <br />
-            <h2 class="featurette-heading text-white">
-              And lastly, this one. <span class="text-muted">Checkmate.</span>
+            <h2 class="featurette-heading text-warning">
+              Kuro <span class="text-muted">Features</span>
             </h2>
-            <p class="lead text-white">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
+            <div class="container lead text-white">
+              <ul>
+                <li>Counts global messages</li>
+                <li>Counts server messages</li>
+                <li>Weekly Leaderboard</li>
+              </ul>
+              <br />
+
+              <a class="btn btn-secondary" href="#kurofeaturette" role="button">
+                <del><i class="fab fa-discord"></i> Add to server</del>
+              </a>
+
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#kuroCommands"
+                aria-expanded="false"
+                aria-controls="kuroCommands"
+              >
+                <i class="fas fa-exclamation-circle"></i> <del>Commands »</del>
+              </button>
+            </div>
           </div>
           <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee"></rect>
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <br />
+            <img
+              class="rounded-circle"
+              width="280"
+              height="280"
+              src="./img/kuro.png"
+            />
           </div>
         </div>
-
-        <hr class="featurette-divider" />
-
+        <div id="about" class="container text-center bg-white">
+          <br />
+          <h2 class="featurette-heading">
+            About <span class="text-muted"> Me</span>
+          </h2>
+          <p class="lead">
+            Hi, I am Wyatt, a nerd, bot developer, server owner, anime fan and
+            hobby philantropist. I am the owner of a Discord server called
+            "Attention Seekers". I've started making bots just for fun and
+            because there were so many bots from which features I only needed
+            one of many. So instead of having a lot bots I wanted to implement
+            the features of other bots and those that they were lacking into my
+            own bots. After that I kept adding new features and I guess I'm
+            addicted now. ; )
+          </p>
+          <br />
+        </div>
         <!-- /END THE FEATURETTES -->
       </div>
-
-      <div id="#" class="container-fluid text-center text-light bg-dark">
-        <h1 class="display-1">Juzo</h1>
-        <p class="lead">
-          Juzo is a Discord Bot for counting, anonymous confessions,
-          suggestions, reacting with custom emojis and more.
-        </p>
-        <a href="https://discordbots.org/bot/538816846712012800">
-          <img
-            src="https://discordbots.org/api/widget/538816846712012800.svg"
-            alt="Juzo"
-          />
-        </a>
-        <br />
-        <br />
-      </div>
-      <div id="about" class="container text-center text-dark bg-white">
-        <h1>About</h1>
-        <p>
-          Juzo is a general purpose Discord bot. I started making this bot for
-          fun and because I can. There are already a lot of moderation and music
-          bots. That's why I wanted this bot to focus on fun features to make my
-          server more colorful and entertaining. After implementing and adding
-          more features I realized that some of the moderation features of other
-          popular bots had some loopholes. Therefore I started implementing my
-          own moderation tools.
-        </p>
-      </div>
-
-      <div id="commands" class="container-fluid text-center text-light bg-dark">
-        <h1>Commands</h1>
-        <p>
-          This is my first bot. I'll put every command in that I like until it
-          explodes. It's still in development. Many changes. Many updates.
-          Chaos.
-        </p>
-        <table class="table table-dark ">
-          <thead>
-            <tr>
-              <th scope="col">Command</th>
-              <th scope="col">Description</th>
-              <th scope="col">Example</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>botinfo</td>
-              <td>Shows bot info</td>
-              <td><code>j!botinfo</code></td>
-            </tr>
-            <tr>
-              <td>cat</td>
-              <td>Shows a random pic of a cat</td>
-              <td><code>j!cat</code></td>
-            </tr>
-            <tr>
-              <td>dog</td>
-              <td>Shows a random pic of a dog</td>
-              <td><code>j!dog</code></td>
-            </tr>
-            <tr>
-              <td>emojis</td>
-              <td>Shows a list of all custom server emojis</td>
-              <td><code>j!emojis</code></td>
-            </tr>
-            <tr>
-              <td>help</td>
-              <td>Shows all commands</td>
-              <td><code>j!help</code></td>
-            </tr>
-            <tr>
-              <td>ping</td>
-              <td>Checks if Bot is online</td>
-              <td><code>j!ping</code></td>
-            </tr>
-            <tr>
-              <td>react [emoji]</td>
-              <td>Sends a reaction</td>
-              <td><code>j!react gifcolorheart</code></td>
-            </tr>
-            <tr>
-              <td>reacttolast [emoji]</td>
-              <td>Reacts to the last message with the given emoji</td>
-              <td><code>j!reacttolast gifcolorheart</code></td>
-            </tr>
-            <tr>
-              <td>reacttothis [emoji]</td>
-              <td>Reacts to the message with the given emoji</td>
-              <td><code>j!reacttothis gifcolorheart</code></td>
-            </tr>
-            <tr>
-              <td>say [message]</td>
-              <td>Lets the bot say something</td>
-              <td><code>j!say hello</code></td>
-            </tr>
-            <tr>
-              <td>serverinfo</td>
-              <td>Shows server info</td>
-              <td><code>j!serverinfo</code></td>
-            </tr>
-            <tr>
-              <td>userinfo [@user]</td>
-              <td>Shows user info</td>
-              <td>
-                <code>j!userinfo</code><br /><code>j!userinfo Peter</code>
-              </td>
-            </tr>
-            <tr>
-              <td>ytsearch [youtube-title]</td>
-              <td>Searches for videos on YouTube</td>
-              <td><code>j!ytsearch blackpink</code></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <footer>
-        <p class="float-right"><a href="#">Back to top</a></p>
-      </footer>
     </main>
+    <footer>
+      <p class="float-right ">
+        <a class="btn btn-secondary" role="button" href="#"
+          >Back to top <i class="fas fa-angle-double-up"></i
+        ></a>
+      </p>
+    </footer>
   </body>
 </html>
