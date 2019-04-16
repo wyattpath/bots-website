@@ -41,14 +41,25 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <i class="fas fa-exclamation-circle"></i> Features
               </a>
-              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#juzofeaturette">Juzo</a>
-                  <a class="dropdown-item" href="#puyofeaturette">Puyo</a>
-                  <a class="dropdown-item" href="#kurofeaturette">Kuro</a>
-                </div>
+              <div
+                class="dropdown-menu bg-secondary"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="#juzofeaturette">Juzo</a>
+                <a class="dropdown-item" href="#puyofeaturette">Puyo</a>
+                <a class="dropdown-item" href="#kurofeaturette">Kuro</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">
@@ -298,7 +309,7 @@
             class="container bg-dark collapse text-light order-sm-3"
           >
             <br />
-            <table class="table-responsive table-dark table-striped">
+            <table class="table-responsive table-sm table-hover table-bordered table-dark table-striped">
               <thead>
                 <tr>
                   <th scope="col">Command</th>
@@ -438,7 +449,7 @@
             class="container collapse text-light order-md-3"
           >
             <br />
-            <table class="table table-light table-striped">
+            <table class="table table-sm table-hover table-bordered table-light table-striped">
               <thead>
                 <tr>
                   <th scope="col">Command</th>
@@ -510,29 +521,53 @@
                   <td>ban [@user] [reason]</td>
                   <td>(mod) Bans a member from the server</td>
                   <td>
-                    <code>p!ban @Peter#1234</code><br /><code
-                      >p!ban @Peter#1234 spam</code
-                    >
+                    <code>p!ban @Peter#1234</code><br />
+                    <code>p!ban @Peter#1234 spam</code>
                   </td>
                 </tr>
                 <tr>
-                  <td>modlog [#channel]</td>
-                  <td>(manage guild) Links a channel for modlogs</td>
-                  <td><code>p!modlog #modlog</code></td>
+                  <td>linklog [logType] [#channel]</td>
+                  <td>
+                        <ul >
+                            (admin) Links a channel for logging<br />
+                            <li>modlog: logs used mod commands</li>
+                            <li>username: logs username changes</li>
+                            <li>nickname: logs nickname changes</li>
+                            <li>deleted: logs deleted messages</li>
+                            <li>edited: logs edited messages</li>
+                          </ul>
+                  </td>
+                  <td>
+                    <code>p!link modlog #modlog</code><br />
+                    <code>p!link deleted #deletedMessages</code>
+                  </td>
                 </tr>
                 <tr>
-                  <td>modrole [@role]</td>
-                  <td>(manage guild) Links a role as modrole</td>
-                  <td><code>p!modrole @mod</code></td>
+                  <td>linkrole [roleType] [@role] </td>
+                  <td>(admin) Links a role<br>
+                  Role types: modrole</td>
+                  <td><code>p!linkrole modrole @mod</code></td>
                 </tr>
+                <tr>
+                    <td>unlink [logType/roleType]</td>
+                    <td>
+                      (admin) Unlinks a channel or role<br />
+                      Log Types: modlog, username, nickname, deleted, edited
+                      Role Types: modrole
+                    </td>
+                    <td>
+                      <code>p!unlink modlog</code><br />
+                      <code>p!unlink modrole</code>
+                    </td>
+                  </tr>
                 <tr>
                   <td>prefix [prefix]</td>
-                  <td>(manage guild) Changes the bot prefix</td>
+                  <td>(admin) Changes the bot prefix</td>
                   <td><code>p!prefix pu!</code></td>
                 </tr>
                 <tr>
                   <td>settings</td>
-                  <td>(manage guild) Shows server settings</td>
+                  <td>(admin) Shows server settings</td>
                   <td><code>p!settings</code></td>
                 </tr>
               </tbody>
